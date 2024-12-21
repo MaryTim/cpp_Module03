@@ -1,4 +1,5 @@
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main() {
     ClapTrap andrzej("Andrzej");
@@ -7,21 +8,12 @@ int main() {
     andrzej.beRepaired(2);
     andrzej.attack("Krzysztof");
     andrzej.attack("Krzysztof");
-    andrzej.attack("Krzysztof");
-    andrzej.attack("Krzysztof");
-    andrzej.takeDamage(2);
-    andrzej.beRepaired(1);
-    andrzej.beRepaired(1);
-    andrzej.beRepaired(1);
-    andrzej.beRepaired(1);
-    andrzej.beRepaired(1); //cant
-    andrzej.attack("Krzysztof"); //cant
 
-    ClapTrap krzysztof("Krzysztof");
-    krzysztof.attack("Wojtek");
-    krzysztof.takeDamage(8);
-    krzysztof.beRepaired(3);
-    krzysztof.attack("Michal");
-    krzysztof.takeDamage(12);
-    krzysztof.attack("a girl");
+    std::cout << "\nTime to create scavTrap\n";
+    ScavTrap st("Incognito");
+    st.attack("Andrzej");
+    st.takeDamage(3);
+    st.beRepaired(3);
+    st.attack("someone");
+    st.guardGate();
 }
