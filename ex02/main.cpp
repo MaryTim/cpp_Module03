@@ -8,7 +8,7 @@ int main() {
     andrzej.takeDamage(5);
     andrzej.beRepaired(2);
     andrzej.attack("Krzysztof");
-    andrzej.attack("Krzysztof");
+    andrzej.attack("Franek");
 
     std::cout << "\nTime to create scavTrap\n";
     ScavTrap st("Incognito");

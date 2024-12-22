@@ -3,7 +3,7 @@
 
 # include "ClapTrap.hpp"
 
-class FragTrap: public ClapTrap {
+class FragTrap: virtual public ClapTrap {
 public:
     FragTrap(std::string name);
     FragTrap(const FragTrap& other);
@@ -11,7 +11,7 @@ public:
     ~FragTrap();
 
     void highFivesGuys(void);
-private:
+protected:
     std::string name_;
     unsigned int hitPoints_;
     unsigned int energyPoints_;
